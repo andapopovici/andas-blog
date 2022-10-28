@@ -14,7 +14,7 @@ const { parseHeaders } = require("../_11ty/apply-csp");
  * They are useful because I tend to break the things they test all the time.
  */
 
-describe("check build output for a generic post", () => {
+xdescribe("check build output for a generic post", () => {
   describe("sample post", () => {
     const POST_PATH = "/posts/firstpost/";
     const POST_FILENAME = `_site${POST_PATH}index.html`;
