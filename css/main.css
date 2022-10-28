@@ -1,6 +1,6 @@
 /* Color customization */
 :root {
-  --primary: #f9c412;
+  --primary: #0099FF;
   --primary-dark: #e7bf60;
 }
 
@@ -646,11 +646,11 @@ h5,
 h6 {
   font-family: var(--font-family);
 }
-h2,
+/*h2,
 h4,
 h6 {
   font-style: italic;
-}
+}*/ /* Anda commented this out - why would we do this? */
 a {
   color: #f9c412;
   text-decoration: none;
@@ -1117,4 +1117,8 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
+}
+
+.post-list {
+  list-style: none;
 }

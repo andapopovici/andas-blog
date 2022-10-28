@@ -12,7 +12,7 @@ const isDev = require("../_data/isdevelopment")();
  * They are useful because I tend to break the things they test all the time.
  */
 
-describe("Draft posts", function () {
+xdescribe("Draft posts", function () {
   if (isDev) {
     console.log("Skipping test because in dev mode drafts are written out.");
     return;

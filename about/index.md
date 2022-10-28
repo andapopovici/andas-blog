@@ -7,6 +7,13 @@ eleventyNavigation:
   order: 3
 ---
 
-I am a person that writes stuff.
+![Picture of Anda's face with a desaturated background](../../img/profile-picture.png)
 
-This blog template is based on [eleventy-high-performance-blog](https://www.industrialempathy.com/posts/eleventy-high-performance-blog/) which itself is based on [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
+<p>I'm a front-end software engineer currently building <a href="https://www.freeagent.com">FreeAgent's</a> Design System. </p>
+
+<p>I enjoy thinking about the usability, accessibility and performance of the things
+I build. I have a keen interest in design and how it can improve people's lives.</p>
+
+<p>I'm learning about accessibility constantly and am a big fan of inclusive design. I believe starting with trying to include everyone and thinking about people's needs benefits all of us in the long run.</p>
+
+<p>I live in Scotland and I have 2 Norwegian forest cats that keep me busy most of the time!</p>
