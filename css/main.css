@@ -1,7 +1,6 @@
 /* Color customization */
 :root {
   --primary: #0099FF;
-  --primary-dark: #e7bf60;
 }
 
 .test-dead-code-elimination-sentinel {
@@ -99,7 +98,7 @@ header aside {
 
 #reading-progress {
   z-index: 1;
-  background-color: var(--primary);
+  background-color: #80D2FF;
   width: 100vw;
   position: absolute;
   left: 0;
@@ -112,6 +111,11 @@ header aside {
 
 #posts li {
   margin-bottom: 0.5em;
+}
+
+#posts ul {
+  margin:0;
+  padding: 0;
 }
 
 /* https://github.com/rsms/inter/blob/master/LICENSE.txt
@@ -917,10 +921,11 @@ header nav label {
 main {
   max-width: 70rem;
   margin: 0 auto;
-  border-top: 0.5px solid #ccc;
+  border-top: 1px solid #ccc;
 }
 footer {
-  background: rgba(0, 0, 0, 0.8);
+  /*background: rgba(0, 0, 0, 0.8);*/
+  background: #293241;
   color: #fff;
   padding: 3em;
   text-align: center;
@@ -935,10 +940,15 @@ footer nav,
 footer p {
   font-size: 90%;
 }
+
+footer a {
+  color: #80D2FF;
+}
+
 article {
-  max-width: 100%;
+  /*max-width: 100%;
+  width: 37.5em;*/
   padding: 1.5em;
-  width: 37.5em;
   margin: 0 auto;
 }
 ol,
@@ -1119,6 +1129,45 @@ a {
   background: var(--primary);
 }
 
+/* New stuff */
+
 .post-list {
   list-style: none;
 }
+
+.profile-pic-container {
+  padding: 1rem;
+}
+
+.profile-pic-container > picture {
+  display: flex;
+}
+
+.profile-pic-container--pic {
+  width: 50%;
+}
+
+/* This is for the blog aligment */
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header, footer, main {
+  flex-shrink: 0;
+}
+
+article {
+  max-width: 60ch;
+}
+

@@ -7,7 +7,9 @@ eleventyNavigation:
   order: 3
 ---
 
-![Picture of Anda's face with a desaturated background](../../img/profile-picture.png)
+<div class="profile-pic-container">
+  <img class="profile-pic-container--pic" src="../../img/profile-picture.png" alt="Picture of Anda smiling in a white t-shirt with red stripes"></img>
+</div>
 
 <p>I'm a front-end software engineer currently building <a href="https://www.freeagent.com">FreeAgent's</a> Design System. </p>
 
