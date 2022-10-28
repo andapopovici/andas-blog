@@ -834,8 +834,6 @@ video {
 }
 body {
   font-family: var(--font-family);
-  background: #181818;
-  color: #eee;
 }
 section {
   margin-left: auto;
