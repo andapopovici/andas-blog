@@ -50,7 +50,7 @@ Neither tries to display an overwhelming amount of actions in the bottom of the 
 We start with the original O'reilly app design, pictured below:
 
 <figure class="small middle-aligned">
-<img src="../../img/oreilly-original.png" alt="Screenshot of the original O'reilly reading app"></img>
+<img src="../../img/oreilly-original.webp" alt="Screenshot of the original O'reilly reading app"></img>
 <figcaption>Official O'reilly app</figcaption></figure>
 
 #### Icon analysis
