@@ -669,9 +669,10 @@ hr {
   border-bottom: 1px solid #eee;
 }
 figcaption {
-  color: #ccc;
   margin-top: 0.75em;
   font-size: 80%;
+  color: #181818;
+  text-align: center;
 }
 dt {
   font-weight: 600;
@@ -943,6 +944,7 @@ footer p {
 
 footer a {
   color: #80D2FF;
+  text-decoration: underline;
 }
 
 article {
@@ -1123,6 +1125,11 @@ mark {
 
 a {
   color: var(--primary);
+  text-decoration: underline;
+}
+
+.direct-link {
+  text-decoration: none;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -1169,5 +1176,15 @@ header, footer, main {
 
 article {
   max-width: 60ch;
+}
+
+/* Image size in an article */
+
+.small {
+  width: 50%;
+}
+
+.middle-aligned {
+  margin: 0 auto;
 }
 
