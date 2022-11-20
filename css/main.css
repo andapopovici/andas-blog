@@ -1,6 +1,7 @@
 /* Color customization */
 :root {
   --primary: #0099FF;
+  --primary-legible: #007acc;
 }
 
 .test-dead-code-elimination-sentinel {
@@ -650,15 +651,6 @@ h5,
 h6 {
   font-family: var(--font-family);
 }
-/*h2,
-h4,
-h6 {
-  font-style: italic;
-}*/ /* Anda commented this out - why would we do this? */
-a {
-  color: #f9c412;
-  text-decoration: none;
-}
 a:hover {
   text-decoration: underline;
 }
@@ -1124,7 +1116,7 @@ mark {
 }
 
 a {
-  color: var(--primary);
+  color: var(--primary-legible);
   text-decoration: underline;
 }
 
