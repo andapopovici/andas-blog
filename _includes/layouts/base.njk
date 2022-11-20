@@ -83,19 +83,15 @@
         {% block article %}
           {{ content | safe }}
         {% endblock %}
-
-        {% if page.url and page.url.indexOf("/posts/") > -1 %}
-          <p>Published <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
-        {% endif %}
       </article>
     </main>
 
     <footer>
-      <p class="small">
+      <p>
         This website is based on 
         <a href="https://www.industrialempathy.com/posts/eleventy-high-performance-blog/">eleventy-high-performance-blog</a>
       </p>
-      <a href="/about/">© {{ metadata.author.name }} 2022 - forever</a>
+      <p>© {{ metadata.author.name }} 2022</p>
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
