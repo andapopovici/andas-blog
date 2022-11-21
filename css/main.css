@@ -2,6 +2,7 @@
 :root {
   --primary: #0099FF;
   --primary-legible: #007acc;
+  --light-blue: #80d2ff;
 }
 
 .test-dead-code-elimination-sentinel {
@@ -99,7 +100,7 @@ header aside {
 
 #reading-progress {
   z-index: 1;
-  background-color: #80D2FF;
+  background-color: var(--light-blue);
   width: 100vw;
   position: absolute;
   left: 0;
@@ -914,7 +915,7 @@ header nav label {
 main {
   max-width: 70rem;
   margin: 0 auto;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--primary);
 }
 footer {
   /*background: rgba(0, 0, 0, 0.8);*/
@@ -935,7 +936,7 @@ footer p {
 }
 
 footer a {
-  color: #80D2FF;
+  color: var(--light-blue);
   text-decoration: underline;
 }
 
@@ -1146,7 +1147,7 @@ a {
   width: 50%;
 }
 
-/* This is for the blog aligment */
+/* This is for the blog alignment */
 
 html {
   height: 100%;
@@ -1170,13 +1171,20 @@ article {
   max-width: 60ch;
 }
 
-/* Image size in an article */
+/* Image in a post styles */
 
-.small {
-  width: 50%;
-}
-
-.middle-aligned {
+.post-image {
   margin: 0 auto;
 }
 
+@media only screen and (min-width: 768px) {
+  .post-image {
+    width: 60%;
+  }
+}
+
+/* Profile illustration style */
+
+.profile-illustration {
+  height: 20rem;
+}
