@@ -51,14 +51,21 @@
       <nav>
         <div id="nav">
           <h1><a href="{{ '/' | url }}" title="Homepage">{{ metadata.title }}</a></h1>
-          {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
           {%- for entry in collections.all | eleventyNavigation %}
             <a href="{{ entry.url | url }}">{{ entry.title }}</a>
           {%- endfor %}
         </div>
-        <div id="reading-progress" aria-hidden="true"></div>
+        {% if page.url and page.url.indexOf("/posts") > -1 %}
+          <div id="reading-progress" aria-hidden="true"></div>
+        {% endif %}
       </nav>
-      <img src="../../img/red-profile-pic.svg" alt="Illustration of Anda with a black cat behind her"></img>
+
+      {% if page.url and page.url === "/" %}
+        <img src="../../img/red-profile-pic.svg"
+          alt="Illustration of Anda with a black cat behind her"
+          class="profile-illustration"></img>
+      {% endif %}
+
       <h1>{{ title }}</h1>
       {% block extraArticleHeader %}{% endblock %}
       <dialog id="message"></dialog>

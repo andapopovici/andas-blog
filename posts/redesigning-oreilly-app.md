@@ -49,9 +49,20 @@ Neither tries to display an overwhelming amount of actions in the bottom of the 
 
 We start with the original O'reilly app design, pictured below:
 
-<figure class="small middle-aligned">
-<img src="../../img/oreilly-original.webp" alt="Screenshot of the original O'reilly reading app"></img>
-<figcaption>Official O'reilly app</figcaption></figure>
+<figure class="post-image">
+<img
+  srcset="../../img/oreilly-original-320w.jpg 320w,
+          ../../img/oreilly-original-640w.jpg 640w,
+          ../../img/oreilly-original-1280w.jpg 1280w,
+          ../../img/oreilly-original-1920w.jpg 1920w"
+  sizes="(max-width: 480px) 320px,
+         (max-width: 768px) 640px,
+         (max-width: 1280px) 1280px,
+         (max-width: 1920px) 1920px"
+  src="../../img/oreilly-original-640w.jpg"
+  alt="Screenshot of the original O'reilly reading app" />
+<figcaption>Official O'reilly app</figcaption>
+</figure>
 
 #### Icon analysis
 
@@ -73,9 +84,20 @@ This was made in Figma. For icon consistency, I grabbed an icon pack and used th
 
 The bottom bar has more room to breathe and could even take a third action if absolutely necessary.
 
-<figure>
-<img class="small" src="../../img/oreilly-app-redesigned.png" alt="Screenshot of the redesigned O'reilly reading app"></img>
-<figcaption>Redesigned app</figcaption></figure>
+<figure class="post-image">
+<img
+  srcset="../../img/oreilly-app-redesigned-320w.png 320w,
+          ../../img/oreilly-app-redesigned-640w.png 640w,
+          ../../img/oreilly-app-redesigned-1280w.png 1280w,
+          ../../img/oreilly-app-redesigned-1920w.png 1920w"
+  sizes="(max-width: 480px) 320px,
+         (max-width: 768px) 640px,
+         (max-width: 1280px) 1280px,
+         (max-width: 1920px) 1920px"
+  src="../../img/oreilly-app-redesigned-640w.png"
+  alt="Screenshot of the redesigned O'reilly reading app" />
+<figcaption>Redesigned app</figcaption>
+</figure>
 
 ### Conclusion
 
