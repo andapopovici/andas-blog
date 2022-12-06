@@ -35,7 +35,7 @@ Another good idea is documenting the revert process to be able to refer to it. T
 
 ## 4. Learn how to write documentation
 
-If you work in a small time like I do, some of your work might involve documenting your components for other developers. This can be tricky if you're not very comfortable with writing content or documenting APIs.
+If you work in a small team like I do, some of your work might involve documenting your components for other developers. This can be tricky if you're not very comfortable with writing content or documenting APIs.
 
 Reading other design systems' technical documentation is a great start. I really enjoy [Primer's](https://primer.style/view-components/) approach to API docs.
 
