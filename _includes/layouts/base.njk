@@ -66,7 +66,14 @@
           class="profile-illustration"></img>
       {% endif %}
 
-      <h1>{{ title }}</h1>
+      <h1>
+        {% if heading %}
+          {{ heading | safe }}
+        {% elif title %}
+          {{ title | safe }}
+        {% endif %}
+      </h1>
+
       {% block extraArticleHeader %}{% endblock %}
       <dialog id="message"></dialog>
     </header>
@@ -81,7 +88,7 @@
 
     <footer>
       <p>
-        This website is based on 
+        This website is based on
         <a href="https://www.industrialempathy.com/posts/eleventy-high-performance-blog/">eleventy-high-performance-blog</a>
       </p>
       <p>© {{ metadata.author.name }} 2022</p>

@@ -1,5 +1,4 @@
 ---
-#layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 {% extends "layouts/base.njk" %}
@@ -7,9 +6,9 @@ templateClass: tmpl-post
 {% block extraArticleHeader %}
    {% set wc = content | striptags | wordcount %}
    {% set wPerMinute = (wc / 240) + 1 %}
-   <p><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
+   <p class="post-date"><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
    <aside>
-     {{ wPerMinute | round }} min read.
+     {{ wPerMinute | round }} min read
    </aside>
 {% endblock %}
 
@@ -24,8 +23,8 @@ templateClass: tmpl-post
   "@type": "Article",
   "headline": "{{ title }}",
   "image": [],
-  "author": "{{ metadata.author.name }}", 
-  "genre": "{{ metadata.genre }}", 
+  "author": "{{ metadata.author.name }}",
+  "genre": "{{ metadata.genre }}",
   "publisher": {
     "@type": "Organization",
     "name": "{{ metadata.publisher.name }}",
