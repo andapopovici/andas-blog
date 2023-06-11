@@ -30,7 +30,7 @@ main img {
 }
 
 /* Avoid the header hiding the content on anchor scroll. */
-article * {
+.post-content * {
   scroll-margin-top: 50px;
 }
 
@@ -124,7 +124,7 @@ header aside {
   margin-bottom: 0.5em;
 }
 
-#posts ul {
+#posts {
   margin:0;
   padding: 0;
 }
@@ -796,7 +796,8 @@ header nav label {
 }
 main {
   max-width: 70rem;
-  margin: 0 auto;
+  padding: 1rem;
+  /* margin: 0 auto; */
   border-top: 1px solid var(--primary);
 }
 footer {
@@ -822,11 +823,8 @@ footer a {
   text-decoration: underline;
 }
 
-article {
-  /*max-width: 100%;
-  width: 37.5em;*/
+.post-content {
   padding: 1.5em;
-  margin: 0 auto;
 }
 ol,
 ul {
@@ -1050,7 +1048,7 @@ header, footer, main {
   flex-shrink: 0;
 }
 
-article {
+.post-content {
   max-width: 60ch;
 }
 
@@ -1076,4 +1074,27 @@ article {
 
 p.post-date {
   font-size: var(--font-size-500);
+}
+
+#posts {
+  padding: 1.5rem;
+  margin: 0;
+}
+
+.post-entry {
+  margin: 0;
+}
+.post-entry header {
+  padding: 0;
+  display: block;
+  text-align: start;
+}
+
+.post-entry .post-title {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+.padded-content {
+  padding: 1.5rem;
 }

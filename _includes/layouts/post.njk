@@ -15,8 +15,9 @@ templateClass: tmpl-post
 {% set shareUrl = metadata.url + page.url %}
 
 {% block article %}
+<div class="post-content">
 {{ content | safe }}
-
+</div>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
