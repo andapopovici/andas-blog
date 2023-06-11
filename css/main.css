@@ -48,12 +48,12 @@ footer {
   padding-top: var(--layout-spacing);
 }
 
-footer p {
+/* footer p {
   border-top: 1px solid #ccc;
   padding-top: 0.25em;
   font-size: 0.9rem;
   color: #767676;
-}
+} */
 
 :is(h1, h2, h3) {
   line-height: 1.2;
@@ -70,4 +70,13 @@ article * + * {
 a {
   color: var(--primary-legible);
   text-underline-offset: 0.15em;
+}
+
+/* My custom styles */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
 }

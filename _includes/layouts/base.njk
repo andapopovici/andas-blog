@@ -49,10 +49,12 @@
   <body>
     <header>
       <nav>
-        <div id="nav">
-          <a href="{{ '/' | url }}" title="Homepage">Blog</a>
+        <ul role="list">
+          <li>
+            <a href="{{ '/' | url }}" title="Homepage">Blog</a>
+          </li>
           {%- for entry in collections.all | eleventyNavigation %}
-            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+            <li><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
           {%- endfor %}
         </div>
         {% if page.url and page.url.indexOf("/posts") > -1 %}
