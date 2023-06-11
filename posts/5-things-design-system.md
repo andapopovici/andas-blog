@@ -27,7 +27,7 @@ However, having a robust testing process starting with unit testing your compone
 
 ## 3. Make reverting updates easy
 
-This is true for any software, obviously. However, when rolling out updates to a design system, bugs could potentially propagate in a lot of places. Having a quick and easy way to revert or fix the issue is important. 
+This is true for any software, obviously. However, when rolling out updates to a design system, bugs could potentially propagate in a lot of places. Having a quick and easy way to revert or fix the issue is important.
 
 The design system I work on is distributed via 2 packages consumed in the main application. In this case, reverting can mean using an older version of the package that contains a bug. Alternatively, if the issue is not critical, the bug can be solved in a new patch release.
 
