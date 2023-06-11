@@ -49,10 +49,12 @@
   <body>
     <header>
       <nav>
-        <div id="nav">
-          <h1><a href="{{ '/' | url }}" title="Homepage">{{ metadata.title }}</a></h1>
+        <ul role="list">
+          <li>
+            <a href="{{ '/' | url }}" title="Homepage">Blog</a>
+          </li>
           {%- for entry in collections.all | eleventyNavigation %}
-            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+            <li><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
           {%- endfor %}
         </div>
         {% if page.url and page.url.indexOf("/posts") > -1 %}
@@ -75,15 +77,12 @@
       </h1>
 
       {% block extraArticleHeader %}{% endblock %}
-      <dialog id="message"></dialog>
     </header>
 
     <main>
-      <article>
-        {% block article %}
-          {{ content | safe }}
-        {% endblock %}
-      </article>
+      {% block article %}
+        {{ content | safe }}
+      {% endblock %}
     </main>
 
     <footer>

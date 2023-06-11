@@ -8,6 +8,7 @@ eleventyNavigation:
   order: 3
 ---
 
+<div class="padded-content">
 <div class="profile-pic-container">
   <img class="profile-pic-container--pic" src="../../img/profile-picture.png" alt="Picture of Anda smiling in a white t-shirt with red stripes"></img>
 </div>
@@ -20,3 +21,4 @@ I build. I have a keen interest in design and how it can improve people's lives.
 <p>I'm learning about accessibility constantly and am a big fan of inclusive design. I believe starting with trying to include everyone and thinking about people's needs benefits all of us in the long run.</p>
 
 <p>I live in Scotland and I have 2 Norwegian forest cats that keep me busy most of the time!</p>
+</div>
