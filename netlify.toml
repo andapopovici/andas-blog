@@ -1,7 +1,7 @@
 [build]
   publish = "_site"
   # Allows overriding metadata.json via env var
-  command = "[ \"$METADATA_JSON\" ] && echo $METADATA_JSON > _data/metadata.json; npx tinacms build && npm run build-ci"
+  command = "[ \"$METADATA_JSON\" ] && echo $METADATA_JSON > _data/metadata.json; npx tinacms build"
   functions = "functions/"
 
 [[plugins]]
