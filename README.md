@@ -1,4 +1,4 @@
-Source code for my blog hosted at [andapopovici.com](https://andapopovici/com)
+Source code for my blog hosted at [andapopovici.com](https://andapopovici.com)
 
 ## Local development
 
