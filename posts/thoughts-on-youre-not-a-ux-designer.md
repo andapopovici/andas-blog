@@ -5,8 +5,6 @@ description: >-
   Quick post outlining a couple of useful tools for testing target sizes on
   websites
 date: 2023-08-05T22:00:00.000Z
-tags:
-  - ux
 ---
 
 This blog post from Whitney Hess - ["You’re not a user experience designer if…"](https://whitneyhess.com/blog/2011/04/23/youre-not-a-user-experience-designer-if/) is still very relevant today, 12 years later.
