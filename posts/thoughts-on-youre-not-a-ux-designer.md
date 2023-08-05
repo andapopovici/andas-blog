@@ -1,9 +1,8 @@
 ---
 layout: layouts/post.njk
-title: A couple of tools for testing target size
+title: Thoughts on "You're not a user experience designer if..."
 description: >-
-  Quick post outlining a couple of useful tools for testing target sizes on
-  websites
+  A couple of notes on this great article from Whitney Hess
 date: 2023-08-05T22:00:00.000Z
 ---
 
