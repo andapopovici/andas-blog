@@ -17,7 +17,7 @@ Here is one of her takes that really resonates with me:
 
 "If you design entirely based on intuition without ever gathering intel from a single human being who might at some point in their life come into contact with your business, I’m sorry, but you just aren’t a user experience designer."
 
-Where does the intuition come from? I think generally, people won’t have the "good" kind of intuition unless they’ve seen countless user research in a certain area and they kind of know how users would behave. [Adam Silver](https://adamsilver.io/about/) and forms comes to mind, where he spent years observing how people fill in forms and he developed the skill of knowing what makes a good form. However, in the 95% (totally making this number up) of cases, intuition = "I know better" attitude. Just talk to your users instead, see where they struggle and use that to inform your design decisions!
+Where does the intuition come from? I think generally, people won’t have the "good" kind of intuition unless they’ve seen countless user research in a certain area and they kind of know how users would behave. [Adam Silver](https://adamsilver.io/about/) and forms comes to mind, where he spent years observing how people fill in forms. However, in the 95% (totally making this number up) of cases, intuition = "I know better" attitude. Just talk to your users instead, see where they struggle and use that to inform your design decisions!
 
 One of her other points kind of blew my mind, as I never thought of it this way:
 
