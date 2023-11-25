@@ -4,11 +4,14 @@ title: Thoughts on "You're not a user experience designer if..."
 description: >-
   A couple of notes on this great article from Whitney Hess
 date: 2023-08-05T22:00:00.000Z
+tags:
+- opinion
+- design
 ---
 
 This blog post from Whitney Hess - ["You’re not a user experience designer if…"](https://whitneyhess.com/blog/2011/04/23/youre-not-a-user-experience-designer-if/) is still very relevant today, 12 years later.
 
-I think the terminology of job titles might have changed a bit since then, as UX designer morphed into "product designer" for some companies. 
+I think the terminology of job titles might have changed a bit since then, as UX designer morphed into "product designer" for some companies.
 
 Here is one of her takes that really resonates with me:
 
