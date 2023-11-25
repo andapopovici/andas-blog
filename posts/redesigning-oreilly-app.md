@@ -4,7 +4,6 @@ description: I redesigned the O'reilly app's book reading mode
 date: 2022-11-20
 tags:
   - design
-  - UX
 layout: layouts/post.njk
 ---
 ## Overview
@@ -15,7 +14,7 @@ As a disclaimer, I used my UX common sense here and didn't perform any user inte
 
 ## The problem
 
-In this article, I'll concentrate on the iOS app as that's the one I use more frequently. 
+In this article, I'll concentrate on the iOS app as that's the one I use more frequently.
 
 The app has the typical layout you would expect from a reading app. The main screen displays a list of books you've saved in your playlist, as well as books you might be interested in.
 
@@ -43,7 +42,7 @@ I think that the less frequent actions don't need to be always visible when ther
 
 I've compared this to 2 other apps I use regularly on my phone - the Kindle app & a free reader called PocketBook. I enjoy reading on these so I tried to understand what about their UX I find appealing.
 
-Neither tries to display an overwhelming amount of actions in the bottom of the screen. 
+Neither tries to display an overwhelming amount of actions in the bottom of the screen.
 
 ### Redesign
 
@@ -102,4 +101,3 @@ The bottom bar has more room to breathe and could even take a third action if ab
 ### Conclusion
 
 I hope you enjoyed going on this redesign journey with me! I particularly enjoyed improving the clarity of some of the actions by adding labels to icons. It shows that even the less ambiguous of icons should be properly labelled for added usability and accessibility.
-

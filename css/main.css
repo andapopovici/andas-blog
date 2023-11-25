@@ -3,6 +3,7 @@
   --primary: #0099FF;
   --primary-legible: #007acc;
   --light-blue: #80d2ff;
+  --lighter-blue: #ccedff;
 
   --font-size-300: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
   --font-size-400: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
@@ -1024,6 +1025,21 @@ a {
 
 .post-list__item p {
   margin-top: 0;
+}
+
+.post-list__item  .post-list__item-tag {
+  text-decoration: none;
+  background: var(--lighter-blue);
+  color: black;
+  font-weight: normal;
+  font-size: var(--font-size-400);
+  padding-inline: 0.5rem;
+  padding-block: 0.25rem;
+  border-radius: 16px;
+}
+
+.post-list__item-tag:hover{
+  text-decoration: underline;
 }
 
 .profile-pic-container {
