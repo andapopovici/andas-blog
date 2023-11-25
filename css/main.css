@@ -1018,6 +1018,14 @@ a {
   font-size: var(--font-size-500);
 }
 
+.post-list__item a {
+  font-weight: bold;
+}
+
+.post-list__item p {
+  margin-top: 0;
+}
+
 .profile-pic-container {
   padding: 1rem;
 }
