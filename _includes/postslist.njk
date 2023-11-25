@@ -1,8 +1,10 @@
 <ul class="post-list">
 {% for post in postslist | reverse %}
-  <li>
+  <li class="post-list__item">
     <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-    <time  datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    <p>
+      <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    <p>
   </li>
 {% endfor %}
 </ul>
