@@ -50,10 +50,11 @@
     <header>
       <nav>
         <div id="nav">
-          <h1><a href="{{ '/' | url }}" title="Homepage">{{ metadata.title }}</a></h1>
+          <h1><a href="{{ '/' | url }}" title="Homepage">Home</a></h1>
           {%- for entry in collections.all | eleventyNavigation %}
             <a href="{{ entry.url | url }}">{{ entry.title }}</a>
           {%- endfor %}
+          <a href="https://www.andapopovici.com/feed/feed.xml">RSS feed</a>
         </div>
         {% if page.url and page.url.indexOf("/posts") > -1 %}
           <div id="reading-progress" aria-hidden="true"></div>

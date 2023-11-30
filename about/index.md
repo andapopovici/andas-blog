@@ -4,8 +4,8 @@ title: About
 heading: About me
 templateClass: tmpl-post
 eleventyNavigation:
-  key: About
-  order: 3
+  key: About me
+  order: 2
 ---
 
 <div class="profile-pic-container">
