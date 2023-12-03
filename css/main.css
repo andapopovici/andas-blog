@@ -67,12 +67,6 @@ a {
 }
 
 
-/* Profile illustration style */
-
-.profile-illustration {
-  height: 20rem;
-}
-
 /* Post styles */
 
 p.post-date {
@@ -89,9 +83,24 @@ header {
   padding-inline-start: 0;
   display: flex;
   justify-content: space-between;
+  font-weight: bold;
 }
 
 .top-navigation__list-subgroup-second {
   display: flex;
   gap: 1rem;
+}
+
+/* Home page */
+.profile-illustration-container {
+  display: grid;
+  place-content: center;
+}
+
+.profile-illustration-container__image {
+  height: 20rem;
+}
+
+.main-heading {
+  text-align: center;
 }

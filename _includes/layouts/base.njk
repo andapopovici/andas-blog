@@ -76,11 +76,13 @@
 
     <main>
       {% if page.url and page.url === "/" %}
-        <img src="../../img/red-profile-pic.svg"
-          alt="Illustration of Anda with a black cat behind her"
-          class="profile-illustration"></img>
+        <div class="profile-illustration-container">
+          <img src="../../img/red-profile-pic.svg"
+            alt="Illustration of Anda with a black cat behind her"
+            class="profile-illustration-container__image"></img>
+        </div>
       {% endif %}
-      <h1>
+      <h1 class="main-heading">
         {% if heading %}
           {{ heading | safe }}
         {% elif title %}
