@@ -86,5 +86,12 @@ header {
 
 .top-navigation__list {
   list-style-type: none;
+  padding-inline-start: 0;
   display: flex;
+  justify-content: space-between;
+}
+
+.top-navigation__list-subgroup-second {
+  display: flex;
+  gap: 1rem;
 }

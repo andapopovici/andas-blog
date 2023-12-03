@@ -50,17 +50,21 @@
     <header>
       <nav class="top-navigation">
         <ul class="top-navigation__list">
-          <li class="top-navigation__list-item">
-            <a href="{{ '/' | url }}" title="Homepage">Home</a>
-          </li>
-          {%- for entry in collections.all | eleventyNavigation %}
+          <div>
             <li class="top-navigation__list-item">
-              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+              <a href="{{ '/' | url }}" title="Homepage">Home</a>
             </li>
-          {%- endfor %}
-          <li class="top-navigation__list-item">
-            <a href="https://www.andapopovici.com/feed/feed.xml">RSS feed</a>
-          </li>
+          </div>
+          <div class="top-navigation__list-subgroup-second">
+            {%- for entry in collections.all | eleventyNavigation %}
+              <li class="top-navigation__list-item">
+                <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+              </li>
+            {%- endfor %}
+            <li class="top-navigation__list-item">
+              <a href="https://www.andapopovici.com/feed/feed.xml">RSS feed</a>
+            </li>
+          </div>
         </ul>
         {% if page.url and page.url.indexOf("/posts") > -1 %}
           <div id="reading-progress" aria-hidden="true"></div>
