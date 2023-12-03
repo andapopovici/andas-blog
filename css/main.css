@@ -49,13 +49,6 @@ footer {
   padding-top: var(--layout-spacing);
 }
 
-/* footer p {
-  border-top: 1px solid #ccc;
-  padding-top: 0.25em;
-  font-size: 0.9rem;
-  color: #767676;
-} */
-
 :is(h1, h2, h3) {
   line-height: 1.2;
 }
@@ -73,90 +66,6 @@ a {
   text-underline-offset: 0.15em;
 }
 
-/* Custom stuff */
-
-.post-list {
-  list-style: none;
-  font-size: var(--font-size-500);
-}
-
-.post-list__item a {
-  font-size: var(--font-size-600);
-  font-weight: bold;
-}
-
-@media only screen and (min-width: 768px) {
-  .post-list__item a {
-    font-size: var(--font-size-500);
-  }
-}
-
-.post-list__item p {
-  margin-top: 0;
-}
-
-.post-list__item  .post-list__item-tag {
-  text-decoration: none;
-  background: var(--lighter-blue);
-  color: black;
-  font-weight: normal;
-  font-size: var(--font-size-400);
-  padding-inline: 0.5rem;
-  padding-block: 0.25rem;
-  border-radius: 16px;
-}
-
-.post-list__item-tag:hover{
-  text-decoration: underline;
-}
-
-.profile-pic-container {
-  padding: 1rem;
-}
-
-.profile-pic-container > picture {
-  display: flex;
-}
-
-.profile-pic-container--pic {
-  width: 50%;
-}
-
-/* This is for the blog alignment */
-
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex-grow: 1;
-}
-
-header, footer, main {
-  flex-shrink: 0;
-}
-
-article {
-  max-width: 60ch;
-}
-
-/* Image in a post styles */
-
-.post-image {
-  margin: 0 auto;
-}
-
-@media only screen and (min-width: 768px) {
-  .post-image {
-    width: 60%;
-  }
-}
 
 /* Profile illustration style */
 
@@ -168,4 +77,14 @@ article {
 
 p.post-date {
   font-size: var(--font-size-500);
+}
+
+/* Top navigation */
+header {
+  width: 100%;
+}
+
+.top-navigation__list {
+  list-style-type: none;
+  display: flex;
 }
