@@ -6,7 +6,6 @@ backend:
 # Add the route to your images, so Netlify CMS knows where to save uploads to.
 media_folder: "img"
 public_folder: "img"
-local_backend: true
 collections:
   - label: "Blog"
     name: "blog"
