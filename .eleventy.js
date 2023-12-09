@@ -181,7 +181,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy(GA_ID ? "js" : "js/*[!cached].*");
   eleventyConfig.addPassthroughCopy("fonts");
   // Netlify CMS config
-  eleventyConfig.addPassthroughCopy("src/admin/");
+  eleventyConfig.addPassthroughCopy("./admin/");
 
   // We need to rebuild upon JS change to update the CSP.
   eleventyConfig.addWatchTarget("./js/");
