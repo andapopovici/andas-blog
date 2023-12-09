@@ -45,6 +45,8 @@
     <script csp-hash>if (/Mac OS X/.test(navigator.userAgent))document.documentElement.classList.add('apple')
     </script>
     <!-- css is inserted by optimize-html custom plugin -->
+    <!-- Netlify CMS login -->
+    <script nonce="123456" type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <header>
@@ -96,5 +98,17 @@
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>

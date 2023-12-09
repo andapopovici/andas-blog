@@ -1,0 +1,19 @@
+backend:
+  # Settings to use Netlify Identity as backend
+  name: git-gateway
+  branch: master
+
+# Add the route to your images, so Netlify CMS knows where to save uploads to.
+media_folder: "img"
+public_folder: "img"
+collections:
+  - label: "Blog"
+    name: "blog"
+    folder: "posts" # Where the new posts should be saved to
+    create: true # This allows you to create new instances in the CMS
+    fields:
+      - { label: "Layout", name: "layout", widget: "string", default: "layouts/post.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: list, default: ["accessibility", "career", "design", "design systems", "engineering", "opinion"] }
