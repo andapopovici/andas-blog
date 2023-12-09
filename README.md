@@ -27,12 +27,6 @@ npm install
 npm run watch
 ```
 
-### Run server with TinaCMS
-
-```
-npx tinacms dev -c "npm run watch"
-```
-
 ### Build and test
 
 ```
