@@ -48,26 +48,41 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div id="nav">
-          <h1><a href="{{ '/' | url }}" title="Homepage">Home</a></h1>
-          {%- for entry in collections.all | eleventyNavigation %}
-            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-          {%- endfor %}
-          <a href="https://www.andapopovici.com/feed/feed.xml">RSS feed</a>
-        </div>
+      <nav class="top-navigation">
+        <ul class="top-navigation__list">
+          <div>
+            <li class="top-navigation__list-item">
+              <a href="{{ '/' | url }}" title="Homepage">Home</a>
+            </li>
+          </div>
+          <div class="top-navigation__list-subgroup-second">
+            {%- for entry in collections.all | eleventyNavigation %}
+              <li class="top-navigation__list-item">
+                <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+              </li>
+            {%- endfor %}
+            <li class="top-navigation__list-item">
+              <a href="https://www.andapopovici.com/feed/feed.xml">RSS feed</a>
+            </li>
+          </div>
+        </ul>
         {% if page.url and page.url.indexOf("/posts") > -1 %}
           <div id="reading-progress" aria-hidden="true"></div>
         {% endif %}
       </nav>
 
-      {% if page.url and page.url === "/" %}
-        <img src="../../img/red-profile-pic.svg"
-          alt="Illustration of Anda with a black cat behind her"
-          class="profile-illustration"></img>
-      {% endif %}
+      {% block extraArticleHeader %}{% endblock %}
+    </header>
 
-      <h1>
+    <main>
+      {% if page.url and page.url === "/" %}
+        <div class="profile-illustration-container">
+          <img src="../../img/red-profile-pic.svg"
+            alt="Illustration of Anda with a black cat behind her"
+            class="profile-illustration-container__image"></img>
+        </div>
+      {% endif %}
+      <h1 class="main-heading">
         {% if heading %}
           {{ heading | safe }}
         {% elif title %}
@@ -75,11 +90,6 @@
         {% endif %}
       </h1>
 
-      {% block extraArticleHeader %}{% endblock %}
-      <dialog id="message"></dialog>
-    </header>
-
-    <main>
       <article>
         {% block article %}
           {{ content | safe }}
