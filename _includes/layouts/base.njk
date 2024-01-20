@@ -39,6 +39,9 @@
 
     <link rel="preconnect" href="/" crossorigin>
     <link rel="preload" href="/fonts/Inter-3.19.var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
     <script async defer src="{{ "/js/min.js" | addHash }}">
     </script>
     <!-- Notably iOS UAs also contain Mac OS X -->
@@ -80,6 +83,7 @@
     </header>
 
     <main>
+      <hr class="divider"></hr>
       <article>
         {% block article %}
           {{ content | safe }}
@@ -92,7 +96,7 @@
         This website is based on
         <a href="https://www.industrialempathy.com/posts/eleventy-high-performance-blog/">eleventy-high-performance-blog</a>
       </p>
-      <p>© {{ metadata.author.name }} 2022</p>
+      <p>© {{ metadata.author.name }} </p>
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
