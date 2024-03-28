@@ -563,8 +563,8 @@ dt {
   }
 }
 html {
-  --font-family-body: 'Source Sans 3', sans-serif;
-  --font-family-heading: 'Oswald', sans-serif;
+  --font-family-body: 'Inclusive Sans', sans-serif;
+  --font-family-heading: 'DM Sans', sans-serif;
 
   font-family: var(--font-family-body);
 }
@@ -1020,7 +1020,6 @@ a {
 
 .post-list__item a {
   font-size: var(--font-size-600);
-  font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) {
