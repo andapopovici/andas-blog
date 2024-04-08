@@ -13,6 +13,8 @@
   --font-size-800: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
   --font-size-900: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
   --font-size-1000: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
+
+  font-size: var(--font-size-500);
 }
 
 .test-dead-code-elimination-sentinel {
@@ -446,38 +448,6 @@ p,
 pre,
 ul {
   margin-bottom: 1.36rem;
-}
-@media (min-width: 600px) {
-  body,
-  ol,
-  p,
-  pre,
-  ul {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  ol,
-  p,
-  pre,
-  ul {
-    margin-bottom: 1.496rem;
-  }
-}
-@media (min-width: 1200px) {
-  body,
-  ol,
-  p,
-  pre,
-  ul {
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  ol,
-  p,
-  pre,
-  ul {
-    margin-bottom: 1.632rem;
-  }
 }
 th {
   font-weight: 600;
