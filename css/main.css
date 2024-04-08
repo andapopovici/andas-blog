@@ -449,38 +449,6 @@ pre,
 ul {
   margin-bottom: 1.36rem;
 }
-@media (min-width: 600px) {
-  body,
-  ol,
-  p,
-  pre,
-  ul {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  ol,
-  p,
-  pre,
-  ul {
-    margin-bottom: 1.496rem;
-  }
-}
-@media (min-width: 1200px) {
-  body,
-  ol,
-  p,
-  pre,
-  ul {
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  ol,
-  p,
-  pre,
-  ul {
-    margin-bottom: 1.632rem;
-  }
-}
 th {
   font-weight: 600;
 }
