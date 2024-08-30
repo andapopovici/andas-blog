@@ -2,9 +2,10 @@
 layout: layouts/post.njk
 title: Languages and screen readers
 description: Documenting what I learned about screen readers and the 'lang' attribute
-date: 2024-08-29T00:00:00.000Z
+date: 2024-08-30T00:00:00.000Z
 tags:
   - accessibility
+  - HTML
 ---
 
 This page is is written in English. For people who can read in English, this is obvious. But how does a screen reader know that this page's content is in English and not another language?
@@ -25,9 +26,9 @@ In practical terms, how does this help people?
 
 ## Screen reader test
 
-To show you how screen readers adapt their pronunciation, I will run VoiceOver on this page.
+To show you how screen readers adapt their pronunciation, I will run the MacOS VoiceOver screen reader on this page.
 
-A paragraph in Romanian with the `"ro"` language specified on the `p` element:
+A paragraph in Romanian with the `ro` language specified on the `p` element:
 
 <p lang="ro"><q>Bate fierul cât e cald.</q></p>
 
@@ -39,6 +40,6 @@ The result is that:
 - the first paragraph is read out in the correct Romanian pronunciation, using a different voice from the rest of the screen reader voice.
 - the second paragraph is read out in the normal screen reader voice, but with an approximation of how an English speaker would read this. Not great, not easy to understand!
 
-<video controls>
-  <source src="../../img/voiceover-romanian.mov" type="video" />
-</video>
+Play back the recording of <a href="https://www.youtube.com/watch?v=2WJZAJNq8GU" target="_blank">VoiceOver reading Romanian on Youtube</a>.
+
+
